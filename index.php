@@ -6,7 +6,7 @@
 			<div class="row align-items-center">
 				<div class="col home_block">
 					<a href="#" class="purple">
-						Бонусы
+						Бонусы Хай
 					</a>
 				</div>
 				<div class="col home_block">
