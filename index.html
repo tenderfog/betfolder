@@ -6,21 +6,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/screen.css">
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script>
-  $(function(){
-    var includes = $('[data-include]');
-    jQuery.each(includes, function(){
-      var file = $(this).data('include');
-      $(this).load(file);
-    });
-  });
-</script>
+
 	</head>
 
 <body>
 	<div class="wrapper">
+	
+	    <!-- include header menu -->
+	    
 		<div data-include="template/header/menu.html"></div>
+		
+		 <!-- include header menu -->
+		
+		
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col home_block">
@@ -58,8 +56,24 @@
 			</video>
 		</div>
 	</div>
-	<?php include('template/footer/footer.php') ?>
-	<?php include('template/footer/modals.php') ?>
-	<?php include('template/footer/scripts.php') ?>
+	
+		    <!-- include footer -->
+	    
+		<div data-include="template/footer/footer.html"></div>
+		
+		 <!-- include footer -->
+		 
+		 <!-- include modals -->
+	    
+		<div data-include="template/header/modals.html"></div>
+		
+		<!-- include modals -->
+		 
+         <!-- include scripts -->
+	    
+		<div data-include="template/header/scripts.html"></div>
+		
+		 <!-- include scripts -->
+	
 </body>
 </html>
