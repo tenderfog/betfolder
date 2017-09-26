@@ -6,12 +6,12 @@
 			<div class="row align-items-center">
 				<div class="col home_block">
 					<a href="#" class="purple">
-						Бонусы Хай
+						Бонусы
 					</a>
 				</div>
 				<div class="col home_block">
 					<a href="#" class="green">
-						Виртуальный Спорт
+						Виртуальный Спорт 4
 					</a>
 				</div>
 				<div class="col home_block">
