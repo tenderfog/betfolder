@@ -11,19 +11,16 @@
   $(function(){
     var includes = $('[data-include]');
     jQuery.each(includes, function(){
-      var file = 'template/header/' + $(this).data('include') + '.html';
+      var file = $(this).data('include');
       $(this).load(file);
     });
   });
 </script>
 	</head>
 
-
-<div data-include="head"></div>
-
 <body>
 	<div class="wrapper">
-		<?php include('template/header/menu.php') ?>
+		<div data-include="template/header/menu.html"></div>
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col home_block">
