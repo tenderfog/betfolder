@@ -12,7 +12,7 @@
 				<div class="col home_block">
 					<a href="#" class="green">
 
-						Виртуальный Спорт тест 3
+						Виртуальный Спорт
 					</a>
 				</div>
 				<div class="col home_block">
