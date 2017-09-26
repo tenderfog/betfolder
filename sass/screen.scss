@@ -1,0 +1,418 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "scss/bootstrap";
+@import "scss/animate";
+@import "scss/owl.carousel.min";
+
+// Colors
+$grey: #b1b1b1;
+$dark_grey: #121516;
+$light_grey: #e3e3e3;
+$but_grey: #c8c8c8;
+$blue: #1079c6;
+$light_blue: #7eb5dd;
+$red: #ec2d2d;
+$foot_bg: #1f1f1f;
+$hr: #4f4f4f;
+$purple: #760867;
+$green: #00a14b;
+$yellow: #f0b926;
+$dark_blue: #11476e;
+
+
+
+
+body {
+	margin: 0;
+	font-family: 'MyriadPro-Regular';
+}
+*{
+	transition: all .5s ease;
+}
+
+.wrapper{
+	background: $dark_grey;
+	min-height: 500px;
+}
+
+.header {
+	background-color: $dark_grey;
+}
+
+.header_right {
+	text-align: right;
+}
+
+.header_right a {
+	display: inline-block;
+	border: 1px solid $white;
+	font-size: 17px;
+	line-height: 23px;
+	height: 30px;
+	color: $white;
+	font-family: 'MyriadPro-Regular';
+	margin-left: 10px;
+	padding: 3px 30px;
+	border-radius: 4px;
+	transition: all .5s ease;
+	font-weight: 400;
+	text-decoration: none;
+
+	&:hover {
+		background: $blue;
+		border: solid 1px $blue;
+		color: $white;
+		text-decoration: none;
+	}
+
+	&.sign_in {
+		background: $light_grey;
+		color: $dark_grey;
+		padding: 4px 23px;
+		&:hover {
+			background: $blue;
+			border: solid 1px $blue;
+			color: $white;
+			text-decoration: none;
+		}
+	}
+
+}
+
+select {
+	font: 400 15px/22px MyriadPro-Regular;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	color: $white;
+	background: url(../img/svg/sort-down.svg) no-repeat 100% 28%;
+	background-size: 9px;
+	border: 0;
+	padding: 0px 15px 2px;
+	-moz-appearance: none;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+
+	& option {
+		border: 0;
+		margin: 0;
+		background: $white;
+		color: $dark_grey;
+	}
+
+}
+
+.navbar {
+	padding: 0px;
+	margin-top: 20px;
+}
+
+.navbar-nav {
+	& li {
+		& a.nav-link {
+			font-size: 13px;
+			font-family: 'Myriad Pro';
+			color: $grey;
+			&:hover{
+				color: $white;
+			}
+			& span{
+				background: $red;
+			    border-radius: 10px;
+			    position: absolute;
+			    top: 0;
+			    margin-left: 38px;
+			    color: $white;
+			    font-size: 9px;
+			    line-height: 15px;
+			    width: 33px;
+			    height: 15px;
+			    text-align: center;
+			}
+		}
+
+	}
+
+	& li:first-child a {
+		padding-left: 0px !important;
+	}
+
+	& li.active a {
+		font-weight: bold;
+	}
+
+}
+
+.show-on-hover {
+	& .dropdown-menu {
+		float: none;
+		border: 0;
+		background-color: $white;
+		margin: 0;
+		padding: 16px 20px;
+
+		& a {
+			color: #131416;
+			line-height: 18px;
+			font-size: 13px;
+			display: block;
+			margin: 5px 0;
+			&:hover{
+		    	color: $light_blue;
+		    	text-decoration: none;
+		    }
+		}
+
+	}
+
+}
+
+.show-on-hover:hover > .dropdown-menu {
+	display: block;
+}
+
+#SupportService{
+	text-decoration: none;
+    color: $but_grey;
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    &:hover{
+    	color: $light_blue;
+    }
+}
+
+// HOME PAGE
+
+.red {
+	background: $red;
+}
+.purple {
+	background: $purple;
+}
+.green {
+	background: $green;
+}
+.yellow {
+	background: $yellow;
+}
+.dark_blue {
+	background: $dark_blue;
+}
+
+.home_block{
+	font-size: 11.38px;
+	color: $white;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease-out;
+    padding: 0 5px;
+    & a{
+    	display: flex;
+	    align-content: center;
+	    align-items: center;
+	    width: 100%;
+	    height: 187px;
+	    text-align: center;
+	    justify-content: center;
+	    font-size: 11.38px;
+		color: $white;
+		margin: 20px 0px;
+		&:hover{
+			text-decoration: none;
+			transform: scale(1.05);
+		}
+    }
+}
+
+.logo-carousel{
+	width: 64px;
+    height: 58px;
+    overflow: hidden;
+    display: inline-block !important;
+    vertical-align: middle;
+    position: relative;
+}
+
+video { 
+    position: absolute;
+    top: 50%;
+    margin-top: -425px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    // background: url('../img/polina.jpg') no-repeat;
+}
+.video_home{
+	    height: 560px;
+    overflow: hidden;
+    position: relative;
+    
+ &:before{
+	 	content: '';
+	 	background: -moz-linear-gradient(top, rgba(18,21,22,1) 0%, rgba(18,21,22,1) 8%, rgba(18,21,22,0.84) 43%, rgba(18,21,22,0.73) 78%, rgba(18,21,22,0.76) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(18,21,22,1) 0%,rgba(18,21,22,1) 8%,rgba(18,21,22,0.84) 43%,rgba(18,21,22,0.73) 78%,rgba(18,21,22,0.76) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(18,21,22,1) 0%,rgba(18,21,22,1) 8%,rgba(18,21,22,0.84) 43%,rgba(18,21,22,0.73) 78%,rgba(18,21,22,0.76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121516', endColorstr='#c2121516',GradientType=0 ); 
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top:0;
+		left:0;
+		z-index: 2;
+ 	}
+}
+
+// FOOTER
+
+
+.footer {
+    background: $foot_bg;
+    padding: 59px 0;
+    & p {
+    	font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+    font-weight: 400;
+    display: block;
+    padding: 15px 0 7px;
+	    &.footer-infos{
+	    	text-align: justify;
+	    }
+    }
+}
+.footer ul{
+	padding: 0;
+}
+.menu_footer > li{
+	display: inline-block;
+	vertical-align: top;
+	width: 19%;
+	&:nth-child(3) {
+	    width: 27%;
+	}
+	&:nth-child(4) {
+	    width: 23%;
+	}
+	&:nth-child(5) {
+	    width: 10%;
+	}
+	& > a{
+		display: block;
+	    color: $grey;
+	    text-transform: capitalize;
+	    font-size: 15px;
+	    line-height: 17px;
+	    font-weight: 400;
+	    cursor: pointer;
+	}
+	& h2 {
+	    color: $white;
+	    text-transform: capitalize;
+	    font-size: 15px;
+	    line-height: 17px;
+	    font-weight: 700;
+	    font-family: 'MyriadPro-Bold';
+	    display: block;
+	    padding-bottom: 20px;
+	}
+	& > ul > li{
+		display: inline-block; 
+		vertical-align: top;
+		width: 49%;
+		& > a{
+			display: block;
+		    color: $grey;
+		    text-transform: capitalize;
+		    font-size: 15px;
+		    line-height: 17px;
+		    font-weight: 400;	
+		    cursor: pointer;
+		}
+	}
+}
+ul.payment_card{
+	list-style: none;
+    margin: 41px 0 38px;
+    padding: 32px 0;
+    border-top: 1px solid $hr;
+    border-bottom: 1px solid $hr;
+	& li {
+		display: inline-block;
+		vertical-align: middle;
+		width: 6.76%;
+		& a img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+.eighteen{
+	    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    margin-top: -65px;
+    border: 1px solid #ffdd5c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: $white;
+    font-weight: 500;
+    background: #1f2120;
+    float: right;
+}
+
+.social_icon{
+	list-style: none;
+	text-align: right;
+	& li{
+		display: inline-block;
+		margin: 0 5px;
+	}
+}
+.sport_book{
+	margin-top:20px;
+}
+.certificates {
+	text-align: right;
+}
+#top-link-block {
+	background: $blue;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 100;
+    & a{
+    	color: $white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
