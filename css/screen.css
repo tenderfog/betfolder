@@ -6948,6 +6948,10 @@ body {
   min-height: 500px;
 }
 
+#logo a:hover {
+  text-decoration: none;
+}
+
 .header {
   background-color: #121516;
 }
@@ -7357,5 +7361,22 @@ ul.payment_card li a img {
 
   ul.payment_card li {
     width: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .logo-carousel {
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .header_right a {
+    padding: 3px 20px;
+  }
+  .header_right a.sign_in {
+    padding: 4px 10px;
+  }
+
+  .header_right select {
+    padding: 0px 10px 2px;
   }
 }
