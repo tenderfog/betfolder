@@ -1,0 +1,1465 @@
+<div class="search-bar">
+    <div class="search-input">
+        <input type="text" class="search" id="search" placeholder="find your game">
+        <button class="search-submit-btn" id="search-submit">
+        <img src="svg/search_icn.svg" />
+        </button>
+    </div>
+</div>
+<div class="accordion-group">
+    
+    
+    <div class="accordion-heading">
+        <div class="accordion-toggle sport-filter-outer">
+            <a href="#" class="sport-box-item ">
+                <div class="filter-icon calendar"></div>
+                <span class="sport-filter-name">Live Scores</span>
+                <i class="fa fa-caret-right dropdown-head-icon hide" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    
+    
+    <div class="accordion-heading">
+        <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#favorites-filter">
+            <div class="sport-box-item ">
+                <div class="filter-icon favorites"></div>
+                <span class="sport-filter-name">Favourites</span> <span class="counter">6</span>
+                <img src="svg/caret-down.svg" class="caret-down" />
+            </div>
+        </div>
+    </div>
+    <div id="favorites-filter" class="accordion-body no-transition collapse">
+        <div class="accordion-inner">
+            <div class="country-box">
+                <div class="league-item">
+                    <div class="checkbox">
+                        <input id="check-gb-1" type="checkbox" name="check-gb-1" />
+                        <label for="check-gb-1"></label>
+                    </div>
+                    <i class="famfamfam-flag-gb"></i>
+                    <span class="league-name">Premier league</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="accordion-heading">
+        <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle">
+            <div class="sport-box-item ">
+                <div class="filter-icon clock"></div>
+                <span class="sport-filter-name">Starting in:</span>
+                <button class="time-filter-btn" id="hr1">1 <span>h</span></button>
+                <button class="time-filter-btn" id="hr3">3 <span>h</span></button>
+                <button class="time-filter-btn" id="hr12">12 <span>h</span></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-heading">
+        <div class="accordion-toggle sport-filter-outer">
+            <div class="sport-box-item ">
+                <div class="filter-icon odds"></div>
+                <span class="sport-filter-name">Top Leagues</span>
+                <i class="fa fa-caret-right dropdown-head-icon hide" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-heading">
+        <div class="accordion-toggle sport-filter-outer">
+            <a href="#" class="sport-box-item ">
+                <div class="filter-icon calendar"></div>
+                <span class="sport-filter-name">Super Lig / Turkey</span>
+            </a>
+        </div>
+    </div>
+</div>
+<hr class="filter-divider">
+<!-- football -->
+<div class="categories">
+    <h5 class="categories-heading">Categories</h5>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-football">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-soccer"></div>
+                    <span class="sport-filter-name">Soccer</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-football" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-en" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-1" type="checkbox" name="check-gb-1" />
+                                        <label for="check-gb-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-2" type="checkbox" name="check-gb-2" />
+                                        <label for="check-gb-2"></label>
+                                    </div>
+                                    <span class="league-name">First division</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-3" type="checkbox" name="check-gb-3" />
+                                        <label for="check-gb-3"></label>
+                                    </div>
+                                    <span class="league-name">Second division</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-4" type="checkbox" name="check-gb-4" />
+                                        <label for="check-gb-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-es" type="checkbox" name="check-es" />
+                            <label for="check-es"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-sp">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-es"></i>
+                                <span class="country-filter-name">Spain</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-sp" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-1" type="checkbox" name="check-es-1" />
+                                        <label for="check-es-1"></label>
+                                    </div>
+                                    <span class="league-name">La Liga</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-2" type="checkbox" name="check-es-2" />
+                                        <label for="check-es-2"></label>
+                                    </div>
+                                    <span class="league-name">Liga B</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-3" type="checkbox" name="check-es-3" />
+                                        <label for="check-es-3"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-4" type="checkbox" name="check-es-4" />
+                                        <label for="check-es-4"></label>
+                                    </div>
+                                    <span class="league-name">U-19</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-it" type="checkbox" name="check-it" />
+                            <label for="check-it"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-it">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-it"></i>
+                                <span class="country-filter-name">Italy</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-it" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-1" type="checkbox" name="check-it-1" />
+                                        <label for="check-it-1"></label>
+                                    </div>
+                                    <span class="league-name">Serie A</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-2" type="checkbox" name="check-it-2" />
+                                        <label for="check-it-2"></label>
+                                    </div>
+                                    <span class="league-name">Serie B</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-3" type="checkbox" name="check-it-3" />
+                                        <label for="check-it-3"></label>
+                                    </div>
+                                    <span class="league-name">Serie C</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-4" type="checkbox" name="check-it-4" />
+                                        <label for="check-it-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-de" type="checkbox" name="check-de" />
+                            <label for="check-de"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-de">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-de"></i>
+                                <span class="country-filter-name">Germany</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-de" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-1" type="checkbox" name="check-de-1" />
+                                        <label for="check-de-1"></label>
+                                    </div>
+                                    <span class="league-name">Bundesliga</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-2" type="checkbox" name="check-de-2" />
+                                        <label for="check-de-2"></label>
+                                    </div>
+                                    <span class="league-name">First league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-3" type="checkbox" name="check-de-3" />
+                                        <label for="check-de-3"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-4" type="checkbox" name="check-de-4" />
+                                        <label for="check-de-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-tr" type="checkbox" name="check-tr" />
+                            <label for="check-tr"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-tr">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-tr"></i>
+                                <span class="country-filter-name">Turkey</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-tr" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-1" type="checkbox" name="check-tr-1" />
+                                        <label for="check-tr-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-2" type="checkbox" name="check-tr-2" />
+                                        <label for="check-tr-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-3" type="checkbox" name="check-tr-3" />
+                                        <label for="check-tr-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-4" type="checkbox" name="check-tr-4" />
+                                        <label for="check-tr-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-ua" type="checkbox" name="check-ua" />
+                            <label for="check-ua"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-ua">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-ua"></i>
+                                <span class="country-filter-name">Ukraine</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-ua" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-1" type="checkbox" name="check-ua-1" />
+                                        <label for="check-ua-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-2" type="checkbox" name="check-ua-2" />
+                                        <label for="check-ua-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-3" type="checkbox" name="check-ua-3" />
+                                        <label for="check-ua-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-4" type="checkbox" name="check-ua-4" />
+                                        <label for="check-ua-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-fr" type="checkbox" name="check-fr" />
+                            <label for="check-fr"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-fr">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-fr"></i>
+                                <span class="country-filter-name">France</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-fr" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-1" type="checkbox" name="check-fr-1" />
+                                        <label for="check-fr-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-2" type="checkbox" name="check-fr-2" />
+                                        <label for="check-fr-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-3" type="checkbox" name="check-fr-3" />
+                                        <label for="check-fr-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-4" type="checkbox" name="check-fr-4" />
+                                        <label for="check-fr-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tennis -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-tennis">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-tennis"></div>
+                    <span class="sport-filter-name">Tennis</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-tennis" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-en" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-1" type="checkbox" name="check-gb-1" />
+                                        <label for="check-gb-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-2" type="checkbox" name="check-gb-2" />
+                                        <label for="check-gb-2"></label>
+                                    </div>
+                                    <span class="league-name">First division</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-3" type="checkbox" name="check-gb-3" />
+                                        <label for="check-gb-3"></label>
+                                    </div>
+                                    <span class="league-name">Second division</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-4" type="checkbox" name="check-gb-4" />
+                                        <label for="check-gb-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-es" type="checkbox" name="check-es" />
+                            <label for="check-es"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-sp">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-es"></i>
+                                <span class="country-filter-name">Spain</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-sp" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-1" type="checkbox" name="check-es-1" />
+                                        <label for="check-es-1"></label>
+                                    </div>
+                                    <span class="league-name">La Liga</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-2" type="checkbox" name="check-es-2" />
+                                        <label for="check-es-2"></label>
+                                    </div>
+                                    <span class="league-name">Liga B</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-3" type="checkbox" name="check-es-3" />
+                                        <label for="check-es-3"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-4" type="checkbox" name="check-es-4" />
+                                        <label for="check-es-4"></label>
+                                    </div>
+                                    <span class="league-name">U-19</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-it" type="checkbox" name="check-it" />
+                            <label for="check-it"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-it">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-it"></i>
+                                <span class="country-filter-name">Italy</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-it" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-1" type="checkbox" name="check-it-1" />
+                                        <label for="check-it-1"></label>
+                                    </div>
+                                    <span class="league-name">Serie A</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-2" type="checkbox" name="check-it-2" />
+                                        <label for="check-it-2"></label>
+                                    </div>
+                                    <span class="league-name">Serie B</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-3" type="checkbox" name="check-it-3" />
+                                        <label for="check-it-3"></label>
+                                    </div>
+                                    <span class="league-name">Serie C</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-4" type="checkbox" name="check-it-4" />
+                                        <label for="check-it-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-de" type="checkbox" name="check-de" />
+                            <label for="check-de"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-de">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-de"></i>
+                                <span class="country-filter-name">Germany</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-de" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-1" type="checkbox" name="check-de-1" />
+                                        <label for="check-de-1"></label>
+                                    </div>
+                                    <span class="league-name">Bundesliga</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-2" type="checkbox" name="check-de-2" />
+                                        <label for="check-de-2"></label>
+                                    </div>
+                                    <span class="league-name">First league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-3" type="checkbox" name="check-de-3" />
+                                        <label for="check-de-3"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-4" type="checkbox" name="check-de-4" />
+                                        <label for="check-de-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-tr" type="checkbox" name="check-tr" />
+                            <label for="check-tr"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-tr">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-tr"></i>
+                                <span class="country-filter-name">Turkey</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-tr" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-1" type="checkbox" name="check-tr-1" />
+                                        <label for="check-tr-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-2" type="checkbox" name="check-tr-2" />
+                                        <label for="check-tr-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-3" type="checkbox" name="check-tr-3" />
+                                        <label for="check-tr-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-4" type="checkbox" name="check-tr-4" />
+                                        <label for="check-tr-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-ua" type="checkbox" name="check-ua" />
+                            <label for="check-ua"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-ua">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-ua"></i>
+                                <span class="country-filter-name">Ukraine</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-ua" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-1" type="checkbox" name="check-ua-1" />
+                                        <label for="check-ua-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-2" type="checkbox" name="check-ua-2" />
+                                        <label for="check-ua-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-3" type="checkbox" name="check-ua-3" />
+                                        <label for="check-ua-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-4" type="checkbox" name="check-ua-4" />
+                                        <label for="check-ua-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-fr" type="checkbox" name="check-fr" />
+                            <label for="check-fr"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-fr">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-fr"></i>
+                                <span class="country-filter-name">France</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-fr" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-1" type="checkbox" name="check-fr-1" />
+                                        <label for="check-fr-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-2" type="checkbox" name="check-fr-2" />
+                                        <label for="check-fr-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-3" type="checkbox" name="check-fr-3" />
+                                        <label for="check-fr-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-4" type="checkbox" name="check-fr-4" />
+                                        <label for="check-fr-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Basketball -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-basketball">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-basketball"></div>
+                    <span class="sport-filter-name">Basketball</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-basketball" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-en" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-1" type="checkbox" name="check-gb-1" />
+                                        <label for="check-gb-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-2" type="checkbox" name="check-gb-2" />
+                                        <label for="check-gb-2"></label>
+                                    </div>
+                                    <span class="league-name">First division</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-3" type="checkbox" name="check-gb-3" />
+                                        <label for="check-gb-3"></label>
+                                    </div>
+                                    <span class="league-name">Second division</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-gb-4" type="checkbox" name="check-gb-4" />
+                                        <label for="check-gb-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-es" type="checkbox" name="check-es" />
+                            <label for="check-es"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-sp">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-es"></i>
+                                <span class="country-filter-name">Spain</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-sp" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-1" type="checkbox" name="check-es-1" />
+                                        <label for="check-es-1"></label>
+                                    </div>
+                                    <span class="league-name">La Liga</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-2" type="checkbox" name="check-es-2" />
+                                        <label for="check-es-2"></label>
+                                    </div>
+                                    <span class="league-name">Liga B</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-3" type="checkbox" name="check-es-3" />
+                                        <label for="check-es-3"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-es-4" type="checkbox" name="check-es-4" />
+                                        <label for="check-es-4"></label>
+                                    </div>
+                                    <span class="league-name">U-19</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-it" type="checkbox" name="check-it" />
+                            <label for="check-it"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-it">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-it"></i>
+                                <span class="country-filter-name">Italy</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-it" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-1" type="checkbox" name="check-it-1" />
+                                        <label for="check-it-1"></label>
+                                    </div>
+                                    <span class="league-name">Serie A</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-2" type="checkbox" name="check-it-2" />
+                                        <label for="check-it-2"></label>
+                                    </div>
+                                    <span class="league-name">Serie B</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-3" type="checkbox" name="check-it-3" />
+                                        <label for="check-it-3"></label>
+                                    </div>
+                                    <span class="league-name">Serie C</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-it-4" type="checkbox" name="check-it-4" />
+                                        <label for="check-it-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-de" type="checkbox" name="check-de" />
+                            <label for="check-de"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-de">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-de"></i>
+                                <span class="country-filter-name">Germany</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-de" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-1" type="checkbox" name="check-de-1" />
+                                        <label for="check-de-1"></label>
+                                    </div>
+                                    <span class="league-name">Bundesliga</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-2" type="checkbox" name="check-de-2" />
+                                        <label for="check-de-2"></label>
+                                    </div>
+                                    <span class="league-name">First league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-3" type="checkbox" name="check-de-3" />
+                                        <label for="check-de-3"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-de-4" type="checkbox" name="check-de-4" />
+                                        <label for="check-de-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-tr" type="checkbox" name="check-tr" />
+                            <label for="check-tr"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-tr">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-tr"></i>
+                                <span class="country-filter-name">Turkey</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-tr" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-1" type="checkbox" name="check-tr-1" />
+                                        <label for="check-tr-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-2" type="checkbox" name="check-tr-2" />
+                                        <label for="check-tr-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-3" type="checkbox" name="check-tr-3" />
+                                        <label for="check-tr-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-tr-4" type="checkbox" name="check-tr-4" />
+                                        <label for="check-tr-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-ua" type="checkbox" name="check-ua" />
+                            <label for="check-ua"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-ua">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-ua"></i>
+                                <span class="country-filter-name">Ukraine</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-ua" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-1" type="checkbox" name="check-ua-1" />
+                                        <label for="check-ua-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-2" type="checkbox" name="check-ua-2" />
+                                        <label for="check-ua-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-3" type="checkbox" name="check-ua-3" />
+                                        <label for="check-ua-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-ua-4" type="checkbox" name="check-ua-4" />
+                                        <label for="check-ua-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-fr" type="checkbox" name="check-fr" />
+                            <label for="check-fr"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-fr">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-fr"></i>
+                                <span class="country-filter-name">France</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="country-filter-fr" class="accordion-body no-transition collapse">
+                        <div class="accordion-inner">
+                            <div class="country-box">
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-1" type="checkbox" name="check-fr-1" />
+                                        <label for="check-fr-1"></label>
+                                    </div>
+                                    <span class="league-name">Premier league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-2" type="checkbox" name="check-fr-2" />
+                                        <label for="check-fr-2"></label>
+                                    </div>
+                                    <span class="league-name">Second league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-3" type="checkbox" name="check-fr-3" />
+                                        <label for="check-fr-3"></label>
+                                    </div>
+                                    <span class="league-name">Third league</span>
+                                </div>
+                                <div class="league-item">
+                                    <div class="checkbox">
+                                        <input id="check-fr-4" type="checkbox" name="check-fr-4" />
+                                        <label for="check-fr-4"></label>
+                                    </div>
+                                    <span class="league-name">U-21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- volleyball -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-volleyball">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-volleyball"></div>
+                    <span class="sport-filter-name">Volleyball</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-volleyball" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Handball -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-handball">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-handball"></div>
+                    <span class="sport-filter-name">Handball</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-handball" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Baseball -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-baseball">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-baseball"></div>
+                    <span class="sport-filter-name">Baseball</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-baseball" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ice Hockey -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-ice-ice-hockey">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-ice-hockey"></div>
+                    <span class="sport-filter-name">Ice Hockey</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-ice-ice-hockey" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- American Football -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-american-football">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-american-football"></div>
+                    <span class="sport-filter-name">American Football</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-american-football" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Darts -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-darts">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-darts"></div>
+                    <span class="sport-filter-name">Darts</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-darts" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rugby-->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-Rugby">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-Rugby"></div>
+                    <span class="sport-filter-name">Rugby</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-Rugby" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cricket-->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-cricket">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-cricket"></div>
+                    <span class="sport-filter-name">Cricket</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-cricket" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Table Tennis-->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-table-tennis">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-table-tennis"></div>
+                    <span class="sport-filter-name">Table Tennis</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-table-tennis" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Boxing -->
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="accordion-toggle sports-case sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-boxing">
+                <div class="sport-box-item ">
+                    <div class="sport-icon live-riccobet-icon-boxing"></div>
+                    <span class="sport-filter-name">Boxing</span>
+                    <img src="svg/caret-down.svg" class="caret-down" />
+                </div>
+            </div>
+        </div>
+        <div id="sport-filter-boxing" class="accordion-body no-transition collapse">
+            <div class="accordion-inner">
+                <div class="sport-box">
+                    <div class="accordion-heading">
+                        <div class="checkbox">
+                            <input id="check-gb" type="checkbox" name="check-gb" />
+                            <label for="check-gb"></label>
+                        </div>
+                        <div class="accordion-toggle country-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#country-filter-en">
+                            <div class="country-box-item ">
+                                <!-- <div class="country-icon football"></div> -->
+                                <i class="famfamfam-flag-gb"></i>
+                                <span class="country-filter-name">England</span>
+                                <!-- <img src="svg/caret-down.svg" class="caret-down" /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="filter-divider">
+<iframe name="BetGamesWidget_iframe_1" frameborder="0" id="BetGamesWidget_iframe_1" scrolling="no" src="https://widget02.betgames.tv/app/en/betadonis/-/eur?iframe_url=https%3A%2F%2Fwww.betadonis.com%2Fen%2Fbetonpoker%2Fhome" width="100%" height="362"></iframe>
