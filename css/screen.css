@@ -8074,9 +8074,6 @@ ul.payment_card li a img {
 
 .commandbox_in_menu.active .commandbox_staticbox {
   display: block;
-}
-
-.active.commandbox_in_menu .commandbox_staticbox {
   padding: 8px 5px;
 }
 
@@ -8123,7 +8120,6 @@ ul.payment_card li a img {
   margin: 0;
   margin-top: 3px;
 }
-
 .header-of-panel a {
   font-variant: small-caps;
   display: block;
@@ -8153,7 +8149,6 @@ ul.payment_card li a img {
 .panel-betslips-inner {
   padding: 0 15px;
 }
-
 .panel-betslips-inner .col {
   padding: 0;
 }

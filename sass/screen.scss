@@ -720,8 +720,6 @@ ul.payment_card{
 }
 .commandbox_in_menu.active .commandbox_staticbox {
     display: block;
-}
-.active.commandbox_in_menu .commandbox_staticbox {
     padding: 8px 5px;
 }
 .multiview_btn {
@@ -763,18 +761,19 @@ ul.payment_card{
 .header-of-panel {
     margin: 0;
     margin-top: 3px;
+    & a {
+	    font-variant: small-caps;
+	    display: block;
+	    margin-bottom: 1px;
+	    padding: 8px 25px;
+	    color: #fff;
+	    border: 1px solid #33485b;
+	    border-radius: 5px;
+	    background-color: #0c1720;
+	    text-decoration: none;
+	}
 }
-.header-of-panel a {
-    font-variant: small-caps;
-    display: block;
-    margin-bottom: 1px;
-    padding: 8px 25px;
-    color: #fff;
-    border: 1px solid #33485b;
-    border-radius: 5px;
-    background-color: #0c1720;
-    text-decoration: none;
-}
+
 
 .teamone_betslipbox {
     font-size: 12px;
@@ -791,10 +790,11 @@ ul.payment_card{
 }
 .panel-betslips-inner{
 	padding: 0 15px;
+	& .col{
+		padding: 0;
+	}
 }
-.panel-betslips-inner .col{
-	padding: 0;
-}
+
 
 // Responsive
 
