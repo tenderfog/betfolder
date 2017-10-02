@@ -760,6 +760,41 @@ ul.payment_card{
     margin: auto;
     display: table;
 }
+.header-of-panel {
+    margin: 0;
+    margin-top: 3px;
+}
+.header-of-panel a {
+    font-variant: small-caps;
+    display: block;
+    margin-bottom: 1px;
+    padding: 8px 25px;
+    color: #fff;
+    border: 1px solid #33485b;
+    border-radius: 5px;
+    background-color: #0c1720;
+    text-decoration: none;
+}
+
+.teamone_betslipbox {
+    font-size: 12px;
+    font-style: italic;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px;
+    word-spacing: 5px;
+    color: #fff;
+    border: 1px solid #0c1720;
+    border-top: 2px solid #33485b;
+    border-radius: 5px;
+    background-color: #203748;
+}
+.panel-betslips-inner{
+	padding: 0 15px;
+}
+.panel-betslips-inner .col{
+	padding: 0;
+}
 
 // Responsive
 
