@@ -21,7 +21,9 @@ $green: #00a14b;
 $yellow: #f0b926;
 $dark_blue: #11476e;
 
-
+$txt_center: center;
+$txt_left: left;
+$txt_right: right;
 
 
 body {
@@ -30,6 +32,12 @@ body {
 }
 *{
 	transition: all .5s ease;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .wrapper{
@@ -532,6 +540,17 @@ a.bet-link {
     align-items: center;
 }
 
+.upper-filter-item {
+    display: inline-block;
+    min-width: auto;
+    margin: 0 -2px;
+    padding: 5px 7px;
+    border: 1px solid transparent;
+}
+.center{
+	text-align: $txt_center;
+}
+
 // FOOTER
 
 
@@ -660,6 +679,86 @@ ul.payment_card{
     & a{
     	color: $white;
     }
+}
+
+.commandbox_in_menu {
+    position: relative;
+    overflow: hidden;
+    margin: 2.5% 2.5%;
+    padding: 0;
+    border: 2px solid #46637f;
+    border-radius: 5px;
+    background-color: #152029;
+}
+.statistics {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    background-color: transparent;
+    z-index: 999;
+    border-bottom: 1px solid #46637f;
+    margin-top: -4px;
+}
+.commandbox_in_menu .commandbox_in_box {
+    font-size: 13px;
+    z-index: 1;
+    display: block;
+    padding: 3px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #203748;
+}
+.active.commandbox_in_menu .commandbox_in_box {
+    padding: 8px 20px;
+    text-decoration: none;
+}
+.commandbox_in_menu .commandbox_staticbox {
+    padding: 3px 5px;
+    border-top: 1px solid #46637f;
+    border-radius: 0;
+    background-color: #203748;
+}
+.commandbox_in_menu.active .commandbox_staticbox {
+    display: block;
+}
+.active.commandbox_in_menu .commandbox_staticbox {
+    padding: 8px 5px;
+}
+.multiview_btn {
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    margin-left: -30%;
+    transition: .5s;
+    width: 60%;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 999;
+    text-align: center;
+    padding-top: 0px !important;
+}
+.commandbox_in_menu .betslps_num {
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    padding: 1px 6px;
+    color: #fff;
+    border: 1px solid #203748;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 10px 0 0 0;
+    background-color: #152029;
+}
+.commandbox_time {
+    font-size: 12px;
+    font-variant: small-caps;
+    margin: auto;
+    display: table;
 }
 
 // Responsive

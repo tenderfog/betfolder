@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Main</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/screen.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- This is code will must been delete -->
+        <!-- This is code insert part of code -->
+        <script>
+        $(function() {
+        var includes = $('[data-include]');
+        jQuery.each(includes, function() {
+        var file = $(this).data('include');
+        $(this).load(file);
+        });
+        });
+        </script>
+        <!-- This is code insert part of code -->
+        <!-- This is code will must been delete -->
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- include header menu -->
+            <div data-include="template/header/menu.html"></div>
+            <!-- include header menu -->
+            <div class="container">
+                <div class="sidebar-func" id="sidebar-func">
+                    <div class="betslip-tg" id="betslip-tg">
+                        <div class="betslip-hd">
+                            <div class="betslip-dc">
+                                <span class="total-empty disp">BET SLIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-inner">
+                        
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <!-- left-bar -->
+                    <div class="col-sm-4 left-bar" data-include="part/livesport-left-bar.html"></div>
+                    <!-- end of left-bar -->
+                    <!-- main-bar -->
+                    <div class="col-sm-8 main-bar" data-include="part/livesport-main-bar.html"></div>
+                    <!-- end of main-bar -->
+                </div>
+            </div>
+            
+        </div>
+        <div data-include="template/footer/footer.html"></div>
+        <div data-include="template/footer/modals.html"></div>
+        <div data-include="template/footer/scripts.html"></div>
+        <script type="text/javascript">
+        $('#betslip-tg').click(function(event) {
+        $('#sidebar-func').toggleClass('active');
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,315 @@
+<div class="search-bar">
+    <div class="search-input">
+        <input type="text" class="search" id="search" placeholder="find your game">
+        <button class="search-submit-btn" id="search-submit">
+        <img src="svg/search_icn.svg" />
+        </button>
+    </div>
+</div>
+
+<div class="upper-filter center">
+  <div class="upper-filter-item active">
+    <a href="#" class="upper-filter-btn region">
+      <img src="img/countries.png" alt="By region">
+      <div class="upper-filter-desc">Country filter</div>
+    </a>
+  </div>
+  <div class="upper-filter-item">
+    <a href="#" class="upper-filter-btn video">
+      <img src="img/videofilt.png" alt="Only streaming">
+      <div class="upper-filter-desc">Video streams</div>
+    </a>
+  </div>
+  <div class="upper-filter-item">
+    <a href="live-multi.php" class="upper-filter-btn multiview">
+      <img src="img/multiview.png" alt="multiview">
+      <div class="upper-filter-desc">Multiview</div>
+    </a>
+  </div>
+</div>
+<hr class="filter-divider">
+<div class="accordion-group">
+  <!-- This one is not an actual accordion -->
+  <div class="accordion-heading">
+    <div class="accordion-toggle sport-filter-outer">
+      <a href="/sport-calendar.php" class="sport-box-item ">
+        <div class="filter-icon calendar"></div>
+        <span class="sport-filter-name">Game calendar</span>
+        <i class="fa fa-caret-right dropdown-head-icon hide" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  <div class="accordion-heading">
+    <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#favorites-filter">
+      <div class="sport-box-item ">
+        <div class="filter-icon favorites"></div>
+        <span class="sport-filter-name">Favourites</span> <span class="counter">0</span>
+        <img src="svg/caret-down.svg" class="caret-down">
+      </div>
+    </div>
+  </div>
+  <div id="favorites-filter" class="accordion-body collapse no-transition">
+    <div class="accordion-inner">
+      <div class="lazy-loader">
+        <div id="block_1" class="barlittle"></div>
+        <div id="block_2" class="barlittle"></div>
+        <div id="block_3" class="barlittle"></div>
+        <div id="block_4" class="barlittle"></div>
+        <div id="block_5" class="barlittle"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-heading">
+    <div class="accordion-toggle  sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#live-now-filter">
+      <div class="sport-box-item ">
+        <div class="filter-icon live-now"></div>
+        <span class="sport-filter-name">Live right now</span>
+        <span class="counter">3</span>
+        <img src="svg/caret-down.svg" class="caret-down">
+      </div>
+    </div>
+  </div>
+  <div id="live-now-filter" class="accordion-body collapse no-transition show">
+    <div class="accordion-group sportf">
+      <div class="accordion-heading">
+        <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-football">
+          <div class="sport-box-item ">
+            
+            <span class="sport-filter-name">Football</span>
+            <img src="svg/caret-down.svg" class="caret-down">
+          </div>
+        </div>
+      </div>
+      <div id="sport-filter-football" class="accordion-body collapse show no-transition">
+        <div class="accordion-inner">
+          <div class="country-box">
+            <div class="panel-group menu-live" id="accordion">
+              <div class="panel panel-default">
+                <div id="block1" class="panel-collapse collapse show">
+                  <div class="panel-body">
+                    <ul class="nav-country menu-live" id="accordion-footbal">
+                      <li class="panel panel-heading">
+                        <a class="accordion-toggle live-country-filter" data-toggle="collapse" data-parent="#accordion-footbal" href="#blockin1">
+                          <i class="famfamfam-flag-tr"></i>
+                          Turkey
+                        </a>
+                        <div id="blockin1" class="collapse show">
+                          <div class="commandbox_in_menu active">
+                            <a href="#" class="livelable active_live"><span>Live</span></a>
+                            <a href="#" class="commandbox_in_box">
+                              <div class="command_star_fam active"><i class="fa fa-star" aria-hidden="true"></i></div>
+                              Georgia<span>0</span>- <span class="numb_top">1</span>Cyprus
+                            </a>
+                            <div class="betslps_num">+46</div>
+                            <div class="commandbox_staticbox">
+                              <div class="commandbox_time">1<sup>st</sup> Half<span>34'</span></div>
+                              <div class="statistics">
+                                <button class="stat-btn">
+                                <i class="fa fa-bar-chart"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="panel panel-heading">
+                        <a class="accordion-toggle live-country-filter" data-toggle="collapse" data-parent="#accordion-footbal" href="#blockin2">
+                          <i class="famfamfam-flag-tr"></i>
+                          England
+                        </a>
+                        <div id="blockin2" class="collapse show">
+                          <div class="commandbox_in_menu">
+                            <a href="#" class="livelable active_live"><span>Live</span></a>
+                            <a href="#" class="commandbox_in_box">
+                              <div class="command_star_fam active"><i class="fa fa-star" aria-hidden="true"></i></div>
+                              Georgia<span>0</span>- <span class="numb_top">1</span>Cyprus
+                            </a>
+                            <div class="betslps_num">+46</div>
+                            <div class="commandbox_staticbox">
+                              <div class="commandbox_time">1<sup>st</sup> Half<span>34'</span></div>
+                              <div class="statistics">
+                                <button class="stat-btn">
+                                <i class="fa fa-bar-chart"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="commandbox_in_menu">
+                            <a href="#" class="livelable active_live" hidden="true" ><span>Live</span></a>
+                            <a href="#" class="commandbox_in_box">
+                              <div class="command_star_fam active"><i class="fa fa-star" aria-hidden="true"></i></div>
+                              Georgia<span>0</span>- <span class="numb_top">1</span>Cyprus
+                            </a>
+                            <div class="betslps_num">+46</div>
+                            <div class="commandbox_staticbox">
+                              <div class="commandbox_time">1<sup>st</sup> Half<span>34'</span></div>
+                              <div class="statistics">
+                                <button class="stat-btn">
+                                <i class="fa fa-bar-chart"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-group sportf">
+        <div class="accordion-heading">
+          <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-basketball">
+            <div class="sport-box-item ">
+              <span class="sport-filter-name">Basketball</span>
+              <img src="svg/caret-down.svg" class="caret-down">
+            </div>
+          </div>
+        </div>
+        <div id="sport-filter-basketball" class="accordion-body collapse no-transition">
+          <div class="accordion-inner">
+            <div class="sport-box">
+              <div class="loader-spinner">Loading...</div>
+              <div class="lazy-loader">
+                <div id="block_1" class="barlittle"></div>
+                <div id="block_2" class="barlittle"></div>
+                <div id="block_3" class="barlittle"></div>
+                <div id="block_4" class="barlittle"></div>
+                <div id="block_5" class="barlittle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tennis -->
+      <div class="accordion-group sportf">
+        <div class="accordion-heading">
+          <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-tennis">
+            <div class="sport-box-item ">
+              <span class="sport-filter-name">Tennis</span>
+              <img src="svg/caret-down.svg" class="caret-down">
+            </div>
+          </div>
+        </div>
+        <div id="sport-filter-tennis" class="accordion-body collapse no-transition">
+          <div class="accordion-inner">
+            <div class="sport-box">
+              <div class="loader-spinner">Loading...</div>
+              <div class="lazy-loader">
+                <div id="block_1" class="barlittle"></div>
+                <div id="block_2" class="barlittle"></div>
+                <div id="block_3" class="barlittle"></div>
+                <div id="block_4" class="barlittle"></div>
+                <div id="block_5" class="barlittle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- volleyball -->
+      <div class="accordion-group sportf">
+        <div class="accordion-heading">
+          <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-volleyball">
+            <div class="sport-box-item ">
+              <span class="sport-filter-name">Volleyball</span>
+              <img src="svg/caret-down.svg" class="caret-down">
+            </div>
+          </div>
+        </div>
+        <div id="sport-filter-volleyball" class="accordion-body collapse no-transition">
+          <div class="accordion-inner">
+            <div class="sport-box">
+              <div class="loader-spinner">Loading...</div>
+              <div class="lazy-loader">
+                <div id="block_1" class="barlittle"></div>
+                <div id="block_2" class="barlittle"></div>
+                <div id="block_3" class="barlittle"></div>
+                <div id="block_4" class="barlittle"></div>
+                <div id="block_5" class="barlittle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hockey -->
+      <div class="accordion-group sportf">
+        <div class="accordion-heading">
+          <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-hockey">
+            <div class="sport-box-item ">
+              <span class="sport-filter-name">Hockey</span>
+              <img src="svg/caret-down.svg" class="caret-down">
+            </div>
+          </div>
+        </div>
+        <div id="sport-filter-hockey" class="accordion-body collapse no-transition">
+          <div class="accordion-inner">
+            <div class="sport-box">
+              <div class="loader-spinner">Loading...</div>
+              <div class="lazy-loader">
+                <div id="block_1" class="barlittle"></div>
+                <div id="block_2" class="barlittle"></div>
+                <div id="block_3" class="barlittle"></div>
+                <div id="block_4" class="barlittle"></div>
+                <div id="block_5" class="barlittle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- boxing -->
+      <div class="accordion-group sportf">
+        <div class="accordion-heading">
+          <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-boxing">
+            <div class="sport-box-item ">
+              <span class="sport-filter-name">Boxing</span>
+              <img src="svg/caret-down.svg" class="caret-down">
+            </div>
+          </div>
+        </div>
+        <div id="sport-filter-boxing" class="accordion-body collapse no-transition">
+          <div class="accordion-inner">
+            <div class="sport-box">
+              <div class="loader-spinner">Loading...</div>
+              <div class="lazy-loader">
+                <div id="block_1" class="barlittle"></div>
+                <div id="block_2" class="barlittle"></div>
+                <div id="block_3" class="barlittle"></div>
+                <div id="block_4" class="barlittle"></div>
+                <div id="block_5" class="barlittle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cricket-->
+      <div class="accordion-group sportf">
+        <div class="accordion-heading">
+          <div class="accordion-toggle sport-filter-outer"  data-toggle="collapse" data-parent="toggle" href="#sport-filter-cricket">
+            <div class="sport-box-item ">
+              <span class="sport-filter-name">Cricket</span>
+              <img src="svg/caret-down.svg" class="caret-down">
+            </div>
+          </div>
+        </div>
+        <div id="sport-filter-cricket" class="accordion-body collapse no-transition">
+          <div class="accordion-inner">
+            <div class="sport-box">
+              <div class="loader-spinner">Loading...</div>
+              <div class="lazy-loader">
+                <div id="block_1" class="barlittle"></div>
+                <div id="block_2" class="barlittle"></div>
+                <div id="block_3" class="barlittle"></div>
+                <div id="block_4" class="barlittle"></div>
+                <div id="block_5" class="barlittle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
