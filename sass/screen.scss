@@ -471,6 +471,67 @@ a.bet-link {
 	color: $white;
 }
 
+.league-item{
+	position: relative;
+}
+
+// Sidebar Funct
+
+.sidebar-func {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: -230px;
+    width: 225px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    background-color: rgba(12, 23, 32, .8);
+    box-shadow: -2px 0 10px 3px #000;
+}
+.sidebar-func.active {
+    right: 0;
+}
+.betslip-tg {
+    position: absolute;
+    top: 115px;
+    left: -170px;
+    width: 170px;
+    height: 60px;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 20px 0 0 20px;
+    background-color: #ffd54f;
+}
+.sidebar-inner {
+    overflow-y: scroll;
+    height: 100vh;
+}
+.betslip-hd {
+    font-size: 18px;
+    font-weight: 700;
+    font-variant: small-caps;
+    line-height: 56px;
+    text-align: center;
+}
+.betslip-hd i {
+    font-size: 36px;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    float: left;
+    margin-top: 10px;
+    padding: 2px;
+    transition: all 0s;
+    transition: .5s;
+    color: #ffd54f;
+    border-radius: 20px;
+    background-color: #333;
+    align-items: center;
+}
+
 // FOOTER
 
 
