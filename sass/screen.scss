@@ -11,6 +11,8 @@ $grey: #b1b1b1;
 $dark_grey: #121516;
 $light_grey: #e3e3e3;
 $but_grey: #c8c8c8;
+$title_grey: #3d3d3d;
+$dark_blue: #11476e;
 $blue: #1079c6;
 $light_blue: #7eb5dd;
 $red: #ec2d2d;
@@ -19,13 +21,13 @@ $hr: #4f4f4f;
 $purple: #760867;
 $green: #00a14b;
 $yellow: #f0b926;
-$dark_blue: #11476e;
+
 
 
 
 body {
 	margin: 0;
-	font-family: 'MyriadPro-Regular';
+	font-family: 'Open Sans';
 }
 *{
 	transition: all .5s ease;
@@ -63,7 +65,7 @@ ul {
 	line-height: 23px;
 	height: 30px;
 	color: $white;
-	font-family: 'MyriadPro-Regular';
+	font-family: 'Open Sans';
 	margin-left: 10px;
 	padding: 3px 30px;
 	border-radius: 4px;
@@ -93,7 +95,7 @@ ul {
 }
 
 select {
-	font: 400 15px/22px MyriadPro-Regular;
+	font: 400 15px/22px Open Sans;
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	color: $white;
@@ -124,7 +126,7 @@ select {
 	& li {
 		& a.nav-link {
 			font-size: 13px;
-			font-family: 'Myriad Pro';
+			font-family: 'Open Sans';
 			color: $grey;
 			&:hover{
 				color: $white;
@@ -188,7 +190,7 @@ select {
 	text-decoration: none;
     color: $but_grey;
     font-size: 14px;
-    font-family: "Myriad Pro";
+    font-family: "Open Sans";
     padding: 0;
     background: transparent;
     border: 0;
@@ -611,7 +613,7 @@ a.bet-link {
 
 .footer {
     background: $foot_bg;
-    padding: 59px 0;
+    padding: 59px 0 0 0;
     & p {
     	font-size: 14px;
     line-height: 16px;
@@ -624,13 +626,18 @@ a.bet-link {
 	    }
     }
 }
+.footer_main{
+	background: rgba(0, 0, 0, 0.21);
+	padding: 35px;
+}
 .footer ul{
 	padding: 0;
 }
 .menu_footer > li{
 	display: inline-block;
 	vertical-align: top;
-	width: 19%;
+	width: 35%;
+	text-align: center;
 	&:nth-child(3) {
 	    width: 27%;
 	}
@@ -644,7 +651,8 @@ a.bet-link {
 		display: block;
 	    color: $grey;
 	    text-transform: capitalize;
-	    font-size: 15px;
+	    font-family: "Open Sans";
+	    font-size: 14px;
 	    line-height: 17px;
 	    font-weight: 400;
 	    cursor: pointer;
@@ -655,7 +663,7 @@ a.bet-link {
 	    font-size: 15px;
 	    line-height: 17px;
 	    font-weight: 700;
-	    font-family: 'MyriadPro-Bold';
+	    font-family: 'Open Sans';
 	    display: block;
 	    padding-bottom: 20px;
 	}
@@ -676,14 +684,10 @@ a.bet-link {
 }
 ul.payment_card{
 	list-style: none;
-    margin: 41px 0 38px;
-    padding: 32px 0;
-    border-top: 1px solid $hr;
-    border-bottom: 1px solid $hr;
 	& li {
 		display: inline-block;
 		vertical-align: middle;
-		width: 6.76%;
+		width: 32%;
 		& a img{
 			max-width: 100%;
 			height: auto;
@@ -692,34 +696,42 @@ ul.payment_card{
 }
 .eighteen{
 	    display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     vertical-align: top;
-    margin-top: -65px;
-    border: 1px solid #ffdd5c;
+    border: 2px solid $blue;
     border-radius: 50%;
     text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    color: $white;
+    line-height: 37px;
+    font-size: 13px;
+    color: $light_blue;
     font-weight: 500;
-    background: #1f2120;
     float: right;
 }
 
 .social_icon{
 	list-style: none;
 	text-align: right;
+	width: 145px;
+    margin: 0 auto 50px auto;
 	& li{
 		display: inline-block;
-		margin: 0 5px;
+		margin: 5px;
 	}
 }
 .sport_book{
 	margin-top:20px;
 }
 .certificates {
-	text-align: right;
+	text-align: center;
+	& a{
+		margin: 0 6px;
+		display: inline-block;
+		& img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
 }
 #top-link-block {
 	background: $blue;
@@ -850,6 +862,14 @@ ul.payment_card{
 	}
 }
 
+.title_foot {
+    text-align: center;
+    margin-bottom: 15px;
+    color: $title_grey;
+}
+.footer_second{
+	padding: 20px 0;
+}
 
 // Responsive
 

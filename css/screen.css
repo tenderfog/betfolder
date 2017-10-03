@@ -7389,7 +7389,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 body {
   margin: 0;
-  font-family: 'MyriadPro-Regular';
+  font-family: 'Open Sans';
 }
 
 * {
@@ -7426,7 +7426,7 @@ ul {
   line-height: 23px;
   height: 30px;
   color: #fff;
-  font-family: 'MyriadPro-Regular';
+  font-family: 'Open Sans';
   margin-left: 10px;
   padding: 3px 30px;
   border-radius: 4px;
@@ -7453,7 +7453,7 @@ ul {
 }
 
 select {
-  font: 400 15px/22px MyriadPro-Regular;
+  font: 400 15px/22px Open Sans;
   -webkit-appearance: none;
   -ms-appearance: none;
   color: #fff;
@@ -7480,7 +7480,7 @@ select option {
 
 .navbar-nav li a.nav-link {
   font-size: 13px;
-  font-family: 'Myriad Pro';
+  font-family: 'Open Sans';
   color: #b1b1b1;
 }
 .navbar-nav li a.nav-link:hover {
@@ -7533,7 +7533,7 @@ select option {
   text-decoration: none;
   color: #c8c8c8;
   font-size: 14px;
-  font-family: "Myriad Pro";
+  font-family: "Open Sans";
   padding: 0;
   background: transparent;
   border: 0;
@@ -7953,7 +7953,7 @@ a.bet-link {
 
 .footer {
   background: #1f1f1f;
-  padding: 59px 0;
+  padding: 59px 0 0 0;
 }
 .footer p {
   font-size: 14px;
@@ -7967,6 +7967,11 @@ a.bet-link {
   text-align: justify;
 }
 
+.footer_main {
+  background: rgba(0, 0, 0, 0.21);
+  padding: 35px;
+}
+
 .footer ul {
   padding: 0;
 }
@@ -7974,7 +7979,8 @@ a.bet-link {
 .menu_footer > li {
   display: inline-block;
   vertical-align: top;
-  width: 19%;
+  width: 35%;
+  text-align: center;
 }
 .menu_footer > li:nth-child(3) {
   width: 27%;
@@ -7989,7 +7995,8 @@ a.bet-link {
   display: block;
   color: #b1b1b1;
   text-transform: capitalize;
-  font-size: 15px;
+  font-family: "Open Sans";
+  font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   cursor: pointer;
@@ -8000,7 +8007,7 @@ a.bet-link {
   font-size: 15px;
   line-height: 17px;
   font-weight: 700;
-  font-family: 'MyriadPro-Bold';
+  font-family: 'Open Sans';
   display: block;
   padding-bottom: 20px;
 }
@@ -8021,15 +8028,11 @@ a.bet-link {
 
 ul.payment_card {
   list-style: none;
-  margin: 41px 0 38px;
-  padding: 32px 0;
-  border-top: 1px solid #4f4f4f;
-  border-bottom: 1px solid #4f4f4f;
 }
 ul.payment_card li {
   display: inline-block;
   vertical-align: middle;
-  width: 6.76%;
+  width: 32%;
 }
 ul.payment_card li a img {
   max-width: 100%;
@@ -8038,28 +8041,28 @@ ul.payment_card li a img {
 
 .eighteen {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   vertical-align: top;
-  margin-top: -65px;
-  border: 1px solid #ffdd5c;
+  border: 2px solid #1079c6;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
-  font-size: 20px;
-  color: #fff;
+  line-height: 37px;
+  font-size: 13px;
+  color: #7eb5dd;
   font-weight: 500;
-  background: #1f2120;
   float: right;
 }
 
 .social_icon {
   list-style: none;
   text-align: right;
+  width: 145px;
+  margin: 0 auto 50px auto;
 }
 .social_icon li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .sport_book {
@@ -8067,7 +8070,15 @@ ul.payment_card li a img {
 }
 
 .certificates {
-  text-align: right;
+  text-align: center;
+}
+.certificates a {
+  margin: 0 6px;
+  display: inline-block;
+}
+.certificates a img {
+  max-width: 100%;
+  height: auto;
 }
 
 #top-link-block {
@@ -8206,6 +8217,16 @@ ul.payment_card li a img {
 }
 .panel-betslips-inner .col {
   padding: 0;
+}
+
+.title_foot {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #3d3d3d;
+}
+
+.footer_second {
+  padding: 20px 0;
 }
 
 @media (max-width: 991px) {
