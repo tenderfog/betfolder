@@ -7806,6 +7806,18 @@ video {
 }
 
 /*endof checkbox*/
+.panel.with-nav-tabs .panel-heading {
+  padding: 5px 5px 0 5px;
+}
+
+.panel.with-nav-tabs .nav-tabs {
+  border-bottom: none;
+}
+
+.panel.with-nav-tabs .nav-justified {
+  margin-bottom: -1px;
+}
+
 a.bet-link {
   display: inline-block;
   width: 100%;
@@ -7894,6 +7906,49 @@ a.bet-link {
 
 .center {
   text-align: center;
+}
+
+.iframe_bl iframe {
+  width: 762px;
+  margin: 0 auto;
+  display: block;
+}
+
+.stream-nav {
+  display: flex;
+  padding-bottom: 3px;
+  text-align: center;
+  border-bottom: 0 !important;
+  justify-content: center;
+  align-items: center;
+}
+.stream-nav li {
+  margin: 0;
+  padding: 0;
+  width: 135px;
+}
+.stream-nav li a {
+  padding: 15px 20px;
+  display: block;
+  position: relative;
+}
+.stream-nav li a img {
+  margin-bottom: 3px;
+  width: 32px;
+  height: 32px;
+}
+.stream-nav li a p {
+  margin: 0;
+}
+.stream-nav li.active, .stream-nav li:hover, .stream-nav li:focus {
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.stream-nav li.active a, .stream-nav li:hover a, .stream-nav li:focus a {
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .footer {
