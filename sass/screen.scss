@@ -21,9 +21,6 @@ $green: #00a14b;
 $yellow: #f0b926;
 $dark_blue: #11476e;
 
-$txt_center: center;
-$txt_left: left;
-$txt_right: right;
 
 
 body {
@@ -548,7 +545,7 @@ a.bet-link {
     border: 1px solid transparent;
 }
 .center{
-	text-align: $txt_center;
+	text-align: center;
 }
 
 // FOOTER
