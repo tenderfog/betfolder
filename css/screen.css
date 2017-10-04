@@ -8005,7 +8005,6 @@ a.bet-link {
   color: #fff;
   text-transform: capitalize;
   font-size: 15px;
-  line-height: 17px;
   font-weight: 700;
   font-family: 'Open Sans';
   display: block;
@@ -8225,8 +8224,49 @@ ul.payment_card li a img {
   color: #3d3d3d;
 }
 
+.more {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
 .footer_second {
   padding: 20px 0;
+}
+.footer_second p {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.footer_second p.footer-infos {
+  color: #2b2b2b;
+}
+
+.copyright {
+  border-radius: 20px;
+  border: 1px solid #1e2325;
+  padding: 10px;
+  margin-top: 53px;
+}
+.copyright span {
+  color: #414344;
+  font-family: "Open Sans";
+  font-size: 9px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 10px;
+}
+.copyright a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 14px;
 }
 
 @media (max-width: 991px) {

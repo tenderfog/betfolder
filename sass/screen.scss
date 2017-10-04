@@ -661,7 +661,6 @@ a.bet-link {
 	    color: $white;
 	    text-transform: capitalize;
 	    font-size: 15px;
-	    line-height: 17px;
 	    font-weight: 700;
 	    font-family: 'Open Sans';
 	    display: block;
@@ -772,7 +771,7 @@ ul.payment_card{
     display: block;
     padding: 3px 20px;
     text-align: center;
-    color: #fff;
+    color: $white;
     background-color: #203748;
 }
 .active.commandbox_in_menu .commandbox_in_box {
@@ -812,7 +811,7 @@ ul.payment_card{
     bottom: 0;
     right: 0;
     padding: 1px 6px;
-    color: #fff;
+    color: $white;
     border: 1px solid #203748;
     border-top: 0;
     border-right: 0;
@@ -833,7 +832,7 @@ ul.payment_card{
 	    display: block;
 	    margin-bottom: 1px;
 	    padding: 8px 25px;
-	    color: #fff;
+	    color: $white;
 	    border: 1px solid #33485b;
 	    border-radius: 5px;
 	    background-color: #0c1720;
@@ -849,7 +848,7 @@ ul.payment_card{
     margin: 0;
     padding: 5px;
     word-spacing: 5px;
-    color: #fff;
+    color: $white;
     border: 1px solid #0c1720;
     border-top: 2px solid #33485b;
     border-radius: 5px;
@@ -867,8 +866,47 @@ ul.payment_card{
     margin-bottom: 15px;
     color: $title_grey;
 }
+.more{
+	display: block;
+	text-align: center;
+	color: $white;
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 13px;
+}
 .footer_second{
 	padding: 20px 0;
+	& p {
+		color: $white;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 400;
+		margin-bottom: 0;
+		&.footer-infos{
+			color: #2b2b2b;
+		}
+	}
+}
+.copyright {
+	border-radius: 20px;
+	border: 1px solid #1e2325;
+	padding: 10px;
+	margin-top: 53px;
+	& span{
+		color: #414344;
+		font-family: "Open Sans";
+		font-size: 9px;
+		font-weight: 400;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 10px;
+	}
+	& a{
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 14px;
+	}
 }
 
 // Responsive
