@@ -22,6 +22,38 @@ $purple: #760867;
 $green: #00a14b;
 $yellow: #f0b926;
 
+// Mixins
+
+@mixin button ($color_but) {
+	border-radius: 8px;
+	color: $white;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 100;
+	outline: none !important;
+	border: 1px solid $color_but;
+	background-color: $color_but;
+	cursor: pointer;
+}
+
+@mixin button_color($color_but){
+	border: 1px solid $color_but;
+	background-color: $color_but;
+}
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
 
 
 
@@ -608,12 +640,173 @@ a.bet-link {
     }
 }
 
+// Registration 
+
+.animated  {
+  -webkit-animation-duration : 3s  ;
+  animation-duration : 3s  ;
+
+  -webkit-animation-delay : 500ms  ;
+  animation-delay : 500ms  ;
+}
+
+.animate-out {
+  -webkit-animation-delay : 0ms  ;
+  animation-delay : 0ms  ;
+}
+
+.slider_registr{
+	
+	& .owl-item {
+	height: 590px;
+		& img {
+	    display: block;
+	    width: 100%;
+	    position: absolute;
+	    z-index: 1;
+	    left: 0;
+    	top: 0;
+		}
+		& .slide_content{
+			position: relative;
+			z-index: 2;
+			padding-top: 30px;
+		}
+		& .slide_img{
+			width: auto;
+		    position: absolute;
+		    left: inherit;
+		    right: 15px;
+		    top: 35%;
+		}
+		& h4{
+			color: $white;
+			font-family: "Open Sans";
+			font-size: 30px;
+			font-weight: 100;
+		}
+		& p{
+			color: $white;
+			font-family: "Open Sans";
+			font-size: 18px;
+			font-weight: 400;
+			& .big{
+				font-size: 24px;
+				font-weight: 700;
+			}
+			
+		}
+		& ul{
+				padding: 0;
+			 	& li {
+					color: $white;
+					font-family: "Open Sans";
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+	}
+}
+.slide_form {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(28, 33, 35, 0.89);
+    padding: 30px 60px;
+    width: 95%;
+    height: 582px;
+    top: 1px;
+    & .title{
+    	color: $light_grey;
+		font-family: "Open Sans";
+		font-size: 30px;
+		font-weight: 300;
+    }
+    & .form-group{
+    	& input, button, select, textarea {
+		    width: 100%;
+		    height: 30px;
+		    background: transparent;
+		    border: 0;		    
+		    color: $title_grey;
+		    font-family: "Open Sans";
+		    font-size: 14px;
+		    font-weight: 400;
+		    outline: none;
+			border-radius: 0;
+			padding: 0;
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: $title_grey;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: $title_grey;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: $title_grey;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: $title_grey;
+			}
+		}
+		& .input_group{
+			position: relative;
+			border-bottom: 1px solid $hr;
+			display: block;
+			margin-bottom: 10px;
+			& img{
+				margin-right: 5px;
+				& + input, & + select, & + textarea{
+					width: calc(100% - 35px);
+				}
+			}
+		}
+		& span.span-title {
+		    color: $blue;
+    		font-size: 10px;
+    		display: block;
+    		text-align: center;
+		    opacity: 0;
+		}
+    }
+}
+.title_box{
+	border-radius: 8px;
+	background-color: #121516;
+	color: #333232;
+	font-family: "Open Sans";
+	font-size: 9px;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 2px 15px;
+    margin-top: 15px;
+}
+.button_blue { 
+	@include button($blue);
+	@include box-shadow(0, 0, 14px, #0b4968, false);
+	padding: 10px 19px;
+    margin-top: 25px;
+	&:hover{
+		@include button_color($dark_blue);
+	}
+}
+.txt_after_but{
+	color: #424242;
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 400;
+	padding-top: 29px;
+	& span{
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
 // FOOTER
 
 
 .footer {
     background: $foot_bg;
-    padding: 59px 0 0 0;
     & p {
     	font-size: 14px;
     line-height: 16px;
@@ -661,7 +854,7 @@ a.bet-link {
 	    color: $white;
 	    text-transform: capitalize;
 	    font-size: 15px;
-	    font-weight: 700;
+	    font-weight: 400;
 	    font-family: 'Open Sans';
 	    display: block;
 	    padding-bottom: 20px;

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Main</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/screen.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- This is code will must been delete -->
+        <!-- This is code insert part of code -->
+        <script>
+        $(function() {
+        var includes = $('[data-include]');
+        jQuery.each(includes, function() {
+        var file = $(this).data('include');
+        $(this).load(file);
+        });
+        });
+        </script>
+        <!-- This is code insert part of code -->
+        <!-- This is code will must been delete -->
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- include header menu -->
+            <div data-include="template/header/menu.html"></div>
+            <!-- include header menu -->
+            <div class="container">
+                <div class="sidebar-func" id="sidebar-func">
+                    <div class="betslip-tg" id="betslip-tg">
+                        <div class="betslip-hd">
+                            <div class="betslip-dc">
+                                <span class="total-empty disp">BET SLIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-inner">
+                        
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- main-bar -->
+                    <div class="col-12">
+                        <div class="row justify-content-start">
+                            <div class="col-5">
+                                <div class="slide_form">
+                                    <div class="title">Create new account</div>
+                                    <form action="" method="post">
+                                        <div class="row form-group">
+                                            <div class="col">
+                                                <span class="span-title" style="opacity: 0;">First name</span>
+                                                <span class="input_group">
+                                                    <img src="img/svg/user.svg">
+                                                    <input class="form-control" type="text" name="name" id="name" placeholder="First name">
+                                                </span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="span-title" style="opacity: 0;">Last name</span>
+                                                <span class="input_group">
+                                                    <input class="form-control" type="text" name="surname" id="surname" placeholder="Last name">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col">
+                                                <span class="span-title" style="opacity: 0;">Nick name</span>
+                                                <span class="input_group">
+                                                    <img src="img/svg/user.svg">
+                                                    <input class="form-control" type="text" name="nickname" id="nickname" placeholder="Nick name">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-4">
+                                                <span class="span-title" style="opacity: 0;">Date</span>
+                                                <span class="input_group">
+                                                    <img src="img/svg/birthday.svg">
+                                                    <select class="form-control">
+                                                        <option>Date</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                        <option>25</option>
+                                                        <option>26</option>
+                                                        <option>27</option>
+                                                        <option>28</option>
+                                                        <option>29</option>
+                                                        <option>30</option>
+                                                        <option>31</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="span-title" style="opacity: 0;">Month</span>
+                                                <span class="input_group">
+                                                    <select class="form-control">
+                                                        <option>Month</option>
+                                                        <option>January</option>
+                                                        <option>February</option>
+                                                        <option>March</option>
+                                                        <option>April</option>
+                                                        <option>May</option>
+                                                        <option>June</option>
+                                                        <option>July</option>
+                                                        <option>August</option>
+                                                        <option>September</option>
+                                                        <option>October</option>
+                                                        <option>November</option>
+                                                        <option>December</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="span-title" style="opacity: 0;">Year</span>
+                                                <span class="input_group">
+                                                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Year">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col center">
+                                                <div class="title_box">Security box</div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col">
+                                                <span class="span-title" style="opacity: 0;">E-mail</span>
+                                                <span class="input_group">
+                                                    <img src="img/svg/mail.svg">
+                                                    <input class="form-control" type="text" name="email" id="email" placeholder="E-mail">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col">
+                                                <span class="span-title" style="opacity: 0;">Password</span>
+                                                <span class="input_group">
+                                                    <img src="img/svg/password.svg">
+                                                    <input class="form-control" type="password" name="password" id="password" value="" placeholder="Password">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col center">
+                                                <div class="title_box">Settings box</div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col">
+                                                <span class="span-title" style="opacity: 0;">Country</span>
+                                                <span class="input_group">
+                                                    <img src="img/svg/country.svg">
+                                                    <select class="form-control">
+                                                        <option>Country</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="span-title" style="opacity: 0;">Сurrency</span>
+                                                <span class="input_group">
+                                                    <img src="img/svg/currency.svg">
+                                                    <select class="form-control">
+                                                        <option>Сurrency</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="submit" class="button_blue">Create account</button>
+                                            </div>
+                                            <div class="col txt_after_but">
+                                                Do not forget about the
+                                                <span>first deposit bonus</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-carousel slider_registr">
+                            <div class="row justify-content-end">
+                                <img src="img/slide1.jpg">
+                                <div class="col-7">
+                                    <div class="slide_content">
+                                        <h4 data-animation-in="flash" data-animation-out="animate-out fadeOutDown">Get your bonuses</h4>
+                                        <p data-animation-in="rollIn" data-animation-out="animate-out rollOut">
+                                        More than <span class="big">300</span> most popular slots<br> from the <span class="big">top 10 providers</span>
+                                        <ul>
+                                            <li>Games filtration</li>
+                                            <li>Loyalty bonuses</li>
+                                            <li>Top providers</li>
+                                            <li>Your favorit games</li>
+                                        </ul>
+                                        </p>
+                                        <p><img src="img/gonzo.png" class="slide_img" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutLeft"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <img src="img/slide1.jpg">
+                                
+                                <div class="col-6">
+                                    <div class="slide_content">
+                                        <h4 data-animation-in="flipInY" data-animation-out="animate-out fadeOutUp">Slide 1</h4>
+                                        <p data-animation-in="flipInY" data-animation-out="animate-out fadeOutLeft">Cras a elementum dolor. Praesent aliquam sapien ac eros semper ullamcorper. Sed imperdiet enim at sodales suscipit. Aenean eget faucibus ipsum.</p>
+                                        <p><a href="#" class="btn" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">Button 1</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of main-bar -->
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div data-include="template/footer/footer.html"></div>
+        <div data-include="template/footer/modals.html"></div>
+        <div data-include="template/footer/scripts.html"></div>
+        <script type="text/javascript">
+        $('#betslip-tg').click(function(event) {
+        $('#sidebar-func').toggleClass('active');
+        });
+        </script>
+    </body>
+</html>
