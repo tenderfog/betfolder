@@ -7714,7 +7714,7 @@ a.bet-link {
   margin-top: 25px;
   margin-right: 20px;
 }
-.button_slide a:hover {
+.button_slide a:hover, .button_slide a:focus, .button_slide a:active {
   border: 1px solid #1079c6;
   background-color: #1079c6;
   border: 1px solid #1079c6;

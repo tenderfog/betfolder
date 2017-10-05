@@ -979,7 +979,7 @@ a.bet-link {
 		margin-top: 25px;
 		margin-right: 20px;
 
-		&:hover {
+		&:hover, &:focus, &:active {
 			@include button_color($blue);
 			border: 1px solid $blue;
 			text-decoration: none;
