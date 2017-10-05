@@ -671,20 +671,24 @@ a.bet-link {
 			position: relative;
 			z-index: 2;
 			padding-top: 30px;
+			padding-left: 50px;
 		}
 		& .slide_img{
 			width: auto;
 		    position: absolute;
 		    left: inherit;
 		    right: 15px;
-		    top: 35%;
+		    top: 20%;
 		}
 		& h4{
 			color: $white;
 			font-family: "Open Sans";
 			font-size: 30px;
 			font-weight: 100;
+			margin-bottom: 25px;
+			
 		}
+		
 		& p{
 			color: $white;
 			font-family: "Open Sans";
@@ -697,15 +701,47 @@ a.bet-link {
 			
 		}
 		& ul{
-				padding: 0;
+			padding: 0;
+			margin-top: 30px;
 			 	& li {
 					color: $white;
 					font-family: "Open Sans";
 					font-size: 14px;
 					font-weight: 400;
+					list-style: none;
+					position: relative;
+					margin-bottom: 10px;
+					&:before{
+						content: '';
+					    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAArElEQVQoU52S0Q2CQBBEZ/BXoo0YLUE7oAOxBCwEWuA6oAMtQWIjEPyVMRycwQ/iwX5dsvtudmeXGMU6ex6J9xlABHALqAJQCCvzSnZ3V0r3CNMyB9EBE6G8SQ6XLmmh/4D7pwfZt9TephV+M0Jwor/KAAuGYfqoQG58lTpzGGal/IG+cr6SVC+baZF7s/YkmOa6j/0vYgC+F+Hcs62qjQFFdg1SDbAQg3x8ex8bN0ykHNxJaQAAAABJRU5ErkJggg==') no-repeat;
+					    display: inline-block;
+					    vertical-align: middle;
+					    position: relative;
+					    margin-right: 15px;
+					    width: 14px;
+					    height: 14px;
+					    margin-top: -2px;
+					}
 				}
 			}
 	}
+
+}
+.numb_title{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 20px;
+	width: 26px;
+	height: 26px;
+	background-color: $dark_grey;
+	color: $grey;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 26px;
 }
 .slide_form {
     position: absolute;
@@ -720,6 +756,10 @@ a.bet-link {
 		font-family: "Open Sans";
 		font-size: 30px;
 		font-weight: 300;
+		margin-left: -45px;
+		& .numb_title{
+			margin-right: 7px;
+		}
     }
     & .form-group{
     	& input, button, select, textarea {
@@ -801,7 +841,24 @@ a.bet-link {
 		font-weight: 600;
 	}
 }
-
+.button_slide {
+	position: absolute;
+    top: -76px;
+    padding-left: 50px;
+    z-index: 2;
+    & a {
+    	@include button(transparent);
+		border: 1px solid #3a3a3a;
+		padding: 6px 20px;
+	    margin-top: 25px;
+	    margin-right: 20px;
+		&:hover{
+			@include button_color($blue);
+			border: 1px solid $blue;
+			text-decoration: none;
+		}
+    }
+}
 // FOOTER
 
 

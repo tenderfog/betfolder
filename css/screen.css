@@ -7472,19 +7472,21 @@ a.bet-link {
   position: relative;
   z-index: 2;
   padding-top: 30px;
+  padding-left: 50px;
 }
 .slider_registr .owl-item .slide_img {
   width: auto;
   position: absolute;
   left: inherit;
   right: 15px;
-  top: 35%;
+  top: 20%;
 }
 .slider_registr .owl-item h4 {
   color: #fff;
   font-family: "Open Sans";
   font-size: 30px;
   font-weight: 100;
+  margin-bottom: 25px;
 }
 .slider_registr .owl-item p {
   color: #fff;
@@ -7498,12 +7500,44 @@ a.bet-link {
 }
 .slider_registr .owl-item ul {
   padding: 0;
+  margin-top: 30px;
 }
 .slider_registr .owl-item ul li {
   color: #fff;
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+.slider_registr .owl-item ul li:before {
+  content: '';
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAArElEQVQoU52S0Q2CQBBEZ/BXoo0YLUE7oAOxBCwEWuA6oAMtQWIjEPyVMRycwQ/iwX5dsvtudmeXGMU6ex6J9xlABHALqAJQCCvzSnZ3V0r3CNMyB9EBE6G8SQ6XLmmh/4D7pwfZt9TephV+M0Jwor/KAAuGYfqoQG58lTpzGGal/IG+cr6SVC+baZF7s/YkmOa6j/0vYgC+F+Hcs62qjQFFdg1SDbAQg3x8ex8bN0ykHNxJaQAAAABJRU5ErkJggg==") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 15px;
+  width: 14px;
+  height: 14px;
+  margin-top: -2px;
+}
+
+.numb_title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 20px;
+  width: 26px;
+  height: 26px;
+  background-color: #121516;
+  color: #b1b1b1;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
 }
 
 .slide_form {
@@ -7520,6 +7554,10 @@ a.bet-link {
   font-family: "Open Sans";
   font-size: 30px;
   font-weight: 300;
+  margin-left: -45px;
+}
+.slide_form .title .numb_title {
+  margin-right: 7px;
 }
 .slide_form .form-group input, .slide_form .form-group button, .slide_form .form-group select, .slide_form .form-group textarea {
   width: 100%;
@@ -7615,6 +7653,34 @@ a.bet-link {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.button_slide {
+  position: absolute;
+  top: -76px;
+  padding-left: 50px;
+  z-index: 2;
+}
+.button_slide a {
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 100;
+  outline: none !important;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #3a3a3a;
+  padding: 6px 20px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.button_slide a:hover {
+  border: 1px solid #1079c6;
+  background-color: #1079c6;
+  border: 1px solid #1079c6;
+  text-decoration: none;
 }
 
 .footer {
