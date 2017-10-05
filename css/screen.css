@@ -7115,7 +7115,7 @@ video {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #121516 0%, #121516 8%, rgba(18, 21, 22, 0.84) 43%, rgba(18, 21, 22, 0.73) 78%, rgba(18, 21, 22, 0.76) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121516', endColorstr='#c2121516',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#121516', endColorstr='#c2121516', GradientType=0);
   display: block;
   position: absolute;
   width: 100%;
@@ -7276,8 +7276,7 @@ video {
   height: 13px;
 }
 
-.checkbox label,
-.radio label {
+.checkbox label, .radio label {
   min-height: 0;
   padding-left: 0;
 }
@@ -7486,7 +7485,7 @@ a.bet-link {
   font-family: "Open Sans";
   font-size: 30px;
   font-weight: 100;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 .slider_registr .owl-item p {
   color: #fff;
@@ -7555,6 +7554,7 @@ a.bet-link {
   font-size: 30px;
   font-weight: 300;
   margin-left: -45px;
+  margin-bottom: 15px;
 }
 .slide_form .title .numb_title {
   margin-right: 7px;
@@ -7657,7 +7657,7 @@ a.bet-link {
 
 .button_slide {
   position: absolute;
-  top: -76px;
+  top: -60px;
   padding-left: 50px;
   z-index: 2;
 }
