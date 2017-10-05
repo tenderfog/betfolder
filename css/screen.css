@@ -7444,6 +7444,10 @@ a.bet-link {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.slider_content {
+  height: 582px;
+}
+
 .register_main {
   margin-top: 60px;
 }
