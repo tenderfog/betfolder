@@ -7444,6 +7444,44 @@ a.bet-link {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.register_main {
+  margin-top: 60px;
+}
+.register_main .big_txt {
+  margin-top: 40px;
+  color: #545454;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+}
+.register_main .big_txt a {
+  color: #fff;
+  text-decoration: underline;
+}
+.register_main .small_txt {
+  color: #545454;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.title_reg_page {
+  color: #545454;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.title_reg_page span {
+  font-weight: 700;
+}
+.title_reg_page span b {
+  color: #147bc6;
+  font-weight: 700;
+}
+
 .animated {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
